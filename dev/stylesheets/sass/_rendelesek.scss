@@ -1,0 +1,251 @@
+// rendelesek
+// ************************
+
+// mobil res
+@media(max-width: 900px){
+   .menu-mobil{
+      display: block;
+   }
+   .menu-desktop{
+      display: none;
+   }
+}
+
+// desktop res
+@media(min-width: 900px){
+   .menu-mobil{
+      display: none;
+   }
+   .menu-desktop{
+      display: block;;
+   }
+}
+
+
+.bg-rendeles-gray{
+   background: #F5F5F5;
+}
+// current week desktop
+.category-per-week-cont{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;;
+   h3.category-label{
+      display: inline-block;
+      font-family: 'Milkshake';
+      color: black;
+      text-align: right;
+      min-width: 80px;
+      padding: 0px;
+      line-height: 1.25;
+      margin-right: 10px;
+      font-size: 20px;
+   }
+   ul.products-week-desktop{
+      width: 100%;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      margin: 0px;
+      li.product{
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         width: 20%;
+         max-width: 20%;
+         padding: 10px;
+         margin: 1px;
+         &:hover{
+            transform: scale(1.05);
+            box-shadow: 0 0 10px 0 rgba(0,0,0,0.11);
+            transition: transform 0.4s, opacity 0.3s, ease-in-out;
+         }
+         // flex-grow: 1;
+         // flex-shrink: 0;
+         .product-top{
+            .product-title{
+               font-size: 12px;
+            }
+            .order-panel{
+               .cart-contbox{
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+               }
+            }
+         }
+      }
+   }
+}
+
+//*****************************
+// mobil styles
+//*****************************
+ul.products-mobil{
+   list-style: none;
+   margin: 0 auto;
+   width: 100%;
+   max-width: 600px;
+   li.day{
+      border-bottom: 1px solid #f5f5f5;
+      padding-bottom: 20px;
+      .current-day{
+         h4{
+            font-family: 'MilkShake';
+            text-align: center;
+            font-size: 30px;
+            color: black;
+            padding-top: 5px;
+         }
+      }
+      ul.daily-product-cont{
+         list-style: none;
+         margin: 0;
+         li.product-mobil{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-radius: 5px;
+            min-height: 95px;
+            &:nth-child(1),
+            &:nth-child(3){
+               background: #F5F5F5;
+            }
+            @media (max-width: 500px){
+               flex-direction: column;
+            }
+            .cat-name-mobil{
+               min-width: 100px;
+               p.kaja-category{
+                  font-family: 'MilkShake';
+                  font-size: 22px;
+                  margin:0px;
+                  text-align: right;
+                  padding-right: 15px;
+               }
+            }
+            .prod-cont-mobil{
+               display: flex;
+               flex-direction: row;
+               justify-content: space-between;
+               align-items: center;
+               .product-title-mobil{
+                  h3{
+                     font-size: 16px;
+                     margin-bottom: 0px;
+                     padding-right: 15px;
+                  }
+               }
+               .order-panel{
+
+               }
+            }
+         }
+      }
+   }
+}
+
+
+
+
+
+// cart & quantity
+.order-panel{
+   position: relative;
+   div.cart-contbox{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      .quantity{
+         // box-shadow: 0 0 5px $border-color;
+         border-radius: 5px;
+         flex-grow:1;
+         // margin-left: 4px;
+         input.input-text.qty.text{
+            width: 50px;
+         }
+      }
+      p.nem-rendelheto{
+         font-size: 14px;
+         text-align: center;
+         font-weight: bold;
+         color: $orange;
+         width: 100%;
+         margin-bottom: 0px;
+      }
+      a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart{
+         font-family: 'FontAwesome';
+         background: none;
+         flex-grow: 1;
+         // border: 1px solid $bones-pink;
+         padding: 0 0 0 0;
+         color: $black;
+         margin: 0 4px 0 2px;
+         &:hover{
+            color: $bones-pink;
+         }
+         &:before{
+            font-family: 'FontAwesome';
+            content: '\f217';
+            position: relative;
+            font-size: 30px;
+         }
+      }
+   }
+}
+
+// quantity & cart mobil
+@media (max-width: 768px) {
+   // cart & quantity
+   .order-panel{
+      position: relative;
+      div.cart-contbox{
+         display: flex;
+         flex-direction: column;;
+         align-items: center;
+         justify-content: space-between;
+         .quantity{
+            // box-shadow: 0 0 5px $border-color;
+            border-radius: 5px;
+            flex-grow:1;
+            padding-bottom: 10px;
+            // margin-left: 4px;
+            input.input-text.qty.text{
+               width: 50px;
+            }
+         }
+         p.nem-rendelheto{
+            font-size: 14px;
+            text-align: center;
+            font-weight: bold;
+            color: $orange;
+            width: 100%;
+            margin-bottom: 0px;
+         }
+         a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart{
+            font-family: 'FontAwesome';
+            background: none;
+            flex-grow: 1;
+            // border: 1px solid $bones-pink;
+            padding: 10px 0 0 0;
+            color: $black;
+            margin: 0 4px 0 2px;
+            &:hover{
+               color: $bones-pink;
+            }
+            &:before{
+               font-family: 'FontAwesome';
+               content: '\f217';
+               position: relative;
+               font-size: 30px;
+            }
+         }
+      }
+   }
+
+}

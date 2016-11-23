@@ -1,0 +1,204 @@
+// ---------------------------------------
+// main nav
+// ---------------------------------------
+nav#site-navigation.main-navigation{
+   display: block;
+   height: 70px;
+}
+
+.menu-single-page-nav-container{
+   @media(max-width: 952px){
+      display: none;
+   }
+   ul#single-page-nav{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      // border: 1px dashed cyan;
+      height: 70px;
+      max-width: 1100px;
+      margin: auto;
+      li{
+         margin-right: 79px;
+         @media(max-width: 1052px){
+            margin-right: 40px;
+         }
+         a{
+            font-family: 'Helvetica';
+            font-size: 14px;
+            color: #FFFFFF;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            padding: 10px 0;
+         }
+      }
+      li:hover{
+         a{
+            color: $orange;
+         }
+      }
+      li.current-menu-item{
+         a{
+            color: $orange;;
+         }
+      }
+      li:last-child{
+         margin-right: 0px;
+      }
+   }
+}
+
+// ---------------------------------------
+// mobil nav
+// ---------------------------------------
+.mobil-button-box{
+   position: relative;
+   @media(min-width: 952px){
+      display: none;
+   }
+   @media(max-width: 952px){
+      display: table;
+   }
+}
+
+
+#mobilnav-cont{
+   width: 300px;
+   display: table;
+   position: absolute;
+   left: 0px;
+   top: 80px;
+   z-index: 99;
+   .menu-mobil-main-container{
+      ul#single-page-mobil-nav.menu{
+         z-index: 3;
+         display: flex;
+         flex-direction: column;
+         padding: 20px;
+         max-width: 300px;
+         background-image: url(img/mobil-nav-bg.jpg);
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: cover;
+         li{
+            display: block;
+            // animation-name: mobilnavbar_li;
+            // animation-duration: 1s;
+            // animation-timing-function: ease-in-out;
+            margin: auto 10px 2px 10px;
+            border-radius: 3px;
+            &:hover{
+               background: $orange;
+            }
+            &:focus{
+               opacity: 0.5;
+            }
+            a{
+               color: white;
+               text-transform: uppercase;
+               font-size: 18px;
+               line-height: 1.25em;
+               text-align: center;
+               font-weight: bold;
+               &hover{
+
+               }
+            }
+         }
+      }
+   }
+
+}
+
+// #mobilnav-cont{
+//    animation-name: bounceInDown;
+//    animation-duration: 1s;
+//    animation-duration: 0.7s;
+//    box-shadow: 0 0 3px rgba(0, 0, 0, 0.26);
+//    background-image: url(img/mobilnav-bg.jpg);
+//    background-position: top center;
+//    background-size: cover;
+//    background-repeat: no-repeat;
+//    padding: 20px 20px;
+//    .phone-number-cont{
+//       margin: 0;
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: space-between;
+//       align-items: center;
+//       @media(min-width: 530px){
+//          display: none;
+//       }
+//       .phone-box{
+//          margin: 10px 0;
+//          width: 100%;
+//          a{
+//             img{
+//                height: 40px;
+//                width: auto;
+//                display: table;
+//                margin: 0px auto;
+//             }
+//          }
+//       }
+//    }
+// }
+
+
+// animation
+@keyframes mobilcontanim {
+   0%{
+      // opacity: 0;
+      width: 0px;
+      height: 0px;
+   }
+   100%{
+      // opacity: 1;
+      width: 100%;
+      height: auto;
+   }
+}
+@keyframes mobilnav-cont_li {
+   0%{
+      opacity: 0;
+   }
+   50%{
+      opacity: 0;
+   }
+   100%{
+      opacity: 1;
+   }
+}
+
+@keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+// .bounceInDown {
+//   animation-name: bounceInDown;
+// }

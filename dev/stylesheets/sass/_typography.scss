@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Milkshake';
+  src: url('fonts/Milkshake.eot?#iefix') format('embedded-opentype'),
+  url('fonts/Milkshake.otf')  format('opentype'),
+  url('fonts/Milkshake.woff') format('woff'),
+  url('fonts/Milkshake.ttf')  format('truetype'),
+  url('fonts/Milkshake.svg#Milkshake') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+body{
+   font-family: 'Helvetica';
+   font-size: 14px;
+   color: #000000;
+   letter-spacing: 0.8px;
+}
+
+h2{
+   font-family: 'Milkshake';
+   font-size: 50px;
+   letter-spacing: 0.8px;
+   color: black;
+}
+
+p{
+   font-family: 'Helvetica';
+   font-size: 14px;
+   color: #000000;
+   letter-spacing: 0.8px;
+}
+a{
+   color: $orange;
+}

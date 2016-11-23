@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="COLOR" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SINGLE-PAGE-hi-def" transform="translate(-900.000000, -4003.000000)" fill="#F8F8F9">
+            <g id="icon-facebook" transform="translate(900.000000, 4003.000000)">
+                <g id="ELŐK">
+                    <g>
+                        <g id="B-verzió">
+                            <path d="M30,28.36066 C30,29.2623 29.266304,30 28.369565,30 L20.706522,30 L20.706522,18.36066 L24.619565,18.36066 L25.190217,13.85246 L20.706522,13.85246 L20.706522,10.98361 C20.706522,9.67213 21.032609,8.77049 22.907609,8.77049 L25.271739,8.77049 L25.271739,4.67213 C24.86413,4.59016 23.478261,4.5082 21.766304,4.5082 C18.342391,4.5082 15.978261,6.63934 15.978261,10.4918 L15.978261,13.85246 L12.065217,13.85246 L12.065217,18.36066 L15.978261,18.36066 L15.978261,30 L1.630435,30 C0.733696,30 0,29.2623 0,28.36066 L0,1.63934 C0,0.7377 0.733696,0 1.630435,0 L28.288043,0 C29.184783,0 29.918478,0.7377 29.918478,1.63934 L29.918478,28.36066 L30,28.36066 L30,28.36066 Z" id="icon-facebook"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
